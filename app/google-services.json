@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "664508978234",
+    "project_id": "app-autenticacao-joao",
+    "storage_bucket": "app-autenticacao-joao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664508978234:android:8b4f711bd75897781c1103",
+        "android_client_info": {
+          "package_name": "com.example.appautenticacaojoao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1s_wP5i0_TphZ8DSkTti6qAkekC2fhvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

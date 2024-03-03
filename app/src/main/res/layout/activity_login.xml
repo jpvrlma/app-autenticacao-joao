@@ -41,16 +41,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Criar conta"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintStart_toStartOf="@+id/btnRecuperaConta"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecuperaConta" />
 
     <TextView
         android:id="@+id/textRecuperaConta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recuperar conta"
-        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintEnd_toEndOf="@+id/btnRecuperaConta"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecuperaConta" />
 
     <ProgressBar
         android:id="@+id/progressBar2"
@@ -62,10 +62,10 @@
         tools:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRecuperaConta" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnRecuperaConta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
