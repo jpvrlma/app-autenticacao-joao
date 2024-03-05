@@ -2,6 +2,7 @@ package com.example.appautenticacaojoao;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +27,7 @@ public class CadastroActivity extends AppCompatActivity {
         binding = ActivityCadastroBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         mAuth = FirebaseAuth.getInstance();
+        IniciaToolbar();
         binding.btnCriarConta.setOnClickListener(v -> validadados());
     }
     private void validadados(){
@@ -52,9 +54,15 @@ public class CadastroActivity extends AppCompatActivity {
                 startActivity(new Intent(this, MainActivity.class));
             } else {
                 binding.progressBar2.setVisibility(View.GONE);
-                Toast.makeText(this, "Falha na criação da conta: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                Log.e("CadastroActivity", "Erro ao criar conta", task.getException());
+                Toast.makeText(this, "Falha na criação da conta: ", Toast.LENGTH_SHORT).show();
+
             }
         });
+    }
+
+    private void IniciaToolbar(){
+        Toolbar toolbar = binding.toolbar;
+        toolbar.setTitle("");
+        setSupportActionBar(toolbar);
     }
 }

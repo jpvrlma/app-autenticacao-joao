@@ -1,6 +1,7 @@
 package com.example.appautenticacaojoao;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,6 +23,7 @@ public class RecuperaContaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityRecuperaContaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        IniciaToolbar();
         mAuth = FirebaseAuth.getInstance();
         binding.btnRecuperaConta.setOnClickListener(v -> validadados());
     }
@@ -46,6 +48,12 @@ public class RecuperaContaActivity extends AppCompatActivity {
                 Toast.makeText(this,"P.A.U",Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void IniciaToolbar(){
+        Toolbar toolbar = binding.toolbar;
+        toolbar.setTitle("");
+        setSupportActionBar(toolbar);
     }
 
 }
